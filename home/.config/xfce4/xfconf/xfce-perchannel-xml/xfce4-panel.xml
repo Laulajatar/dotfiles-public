@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="panels" type="array">
+    <value type="int" value="2"/>
+    <value type="int" value="3"/>
+    <value type="int" value="1"/>
+    <value type="int" value="4"/>
+    <property name="panel-2" type="empty">
+      <property name="position" type="string" value="p=6;x=100;y=17"/>
+      <property name="size" type="uint" value="24"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="35"/>
+        <value type="int" value="33"/>
+      </property>
+      <property name="length" type="uint" value="2"/>
+      <property name="length-adjust" type="bool" value="false"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.250980"/>
+        <value type="double" value="0.270588"/>
+        <value type="double" value="0.321569"/>
+        <value type="double" value="1.000000"/>
+      </property>
+    </property>
+    <property name="panel-3" type="empty">
+      <property name="position" type="string" value="p=2;x=1824;y=27"/>
+      <property name="size" type="uint" value="24"/>
+      <property name="length" type="uint" value="5"/>
+      <property name="length-adjust" type="bool" value="false"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="34"/>
+      </property>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.250980"/>
+        <value type="double" value="0.270588"/>
+        <value type="double" value="0.321569"/>
+        <value type="double" value="1.000000"/>
+      </property>
+    </property>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=2;x=3784;y=23"/>
+      <property name="size" type="uint" value="24"/>
+      <property name="length" type="uint" value="5"/>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.250980"/>
+        <value type="double" value="0.270588"/>
+        <value type="double" value="0.321569"/>
+        <value type="double" value="1.000000"/>
+      </property>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="5"/>
+      </property>
+    </property>
+    <property name="panel-4" type="empty">
+      <property name="position" type="string" value="p=6;x=1987;y=13"/>
+      <property name="size" type="uint" value="24"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.250980"/>
+        <value type="double" value="0.270588"/>
+        <value type="double" value="0.321569"/>
+        <value type="double" value="1.000000"/>
+      </property>
+      <property name="length" type="uint" value="7"/>
+      <property name="length-adjust" type="bool" value="false"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="7"/>
+        <value type="int" value="6"/>
+      </property>
+      <property name="icon-size" type="uint" value="16"/>
+      <property name="position-locked" type="bool" value="true"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-33" type="string" value="whiskermenu"/>
+    <property name="plugin-34" type="string" value="xfce4-mpc-plugin"/>
+    <property name="plugin-35" type="string" value="separator">
+      <property name="expand" type="bool" value="false"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="clipman" type="empty">
+      <property name="tweaks" type="empty">
+        <property name="never-confirm-history-clear" type="bool" value="false"/>
+      </property>
+    </property>
+    <property name="plugin-5" type="string" value="xfce4-mpc-plugin"/>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="names-ordered" type="array">
+        <value type="string" value="cadmus"/>
+        <value type="string" value="remmina"/>
+        <value type="string" value="msm notifier"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="discover-overlay"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="task manager"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="blueman-tray"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="antimicrox"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="clipman"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="dropbox"/>
+      </property>
+      <property name="size-max" type="uint" value="16"/>
+      <property name="show-frame" type="bool" value="false"/>
+      <property name="square-icons" type="bool" value="false"/>
+      <property name="names-hidden" type="array">
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="discover-overlay"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="pamac-tray"/>
+      </property>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="clipman"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-2288"/>
+        <value type="string" value="dropbox-client-2338"/>
+        <value type="string" value="dropbox-client-2108"/>
+        <value type="string" value="dropbox-client-2179"/>
+        <value type="string" value="dropbox-client-2139"/>
+        <value type="string" value="dropbox-client-219229"/>
+        <value type="string" value="dropbox-client-1404"/>
+        <value type="string" value="dropbox-client-2243"/>
+        <value type="string" value="dropbox-client-2257"/>
+        <value type="string" value="dropbox-client-2371"/>
+        <value type="string" value="dropbox-client-2199"/>
+        <value type="string" value="dropbox-client-2176"/>
+        <value type="string" value="dropbox-client-2294"/>
+        <value type="string" value="dropbox-client-2187"/>
+        <value type="string" value="dropbox-client-2246"/>
+        <value type="string" value="dropbox-client-2140"/>
+        <value type="string" value="dropbox-client-2142"/>
+        <value type="string" value="dropbox-client-2173"/>
+        <value type="string" value="dropbox-client-2262"/>
+        <value type="string" value="dropbox-client-2225"/>
+        <value type="string" value="dropbox-client-2158"/>
+        <value type="string" value="dropbox-client-2191"/>
+        <value type="string" value="dropbox-client-165233"/>
+        <value type="string" value="dropbox-client-1371"/>
+        <value type="string" value="dropbox-client-1381"/>
+        <value type="string" value="MSM Notifier"/>
+        <value type="string" value="dropbox-client-1368"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="dropbox-client-1365"/>
+        <value type="string" value="dropbox-client-1374"/>
+        <value type="string" value="dropbox-client-1376"/>
+        <value type="string" value="dropbox-client-1362"/>
+        <value type="string" value="dropbox-client-1367"/>
+        <value type="string" value="dropbox-client-1364"/>
+        <value type="string" value="antimicrox"/>
+        <value type="string" value="discover_overlay"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="dropbox-client-1423"/>
+        <value type="string" value="Microsoft Teams - Preview1"/>
+        <value type="string" value="cadmus"/>
+        <value type="string" value="remmina-icon"/>
+        <value type="string" value="discord1"/>
+      </property>
+      <property name="icon-size" type="int" value="16"/>
+      <property name="hide-new-items" type="bool" value="false"/>
+      <property name="hidden-legacy-items" type="array">
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="pamac-tray"/>
+      </property>
+      <property name="hidden-items" type="array">
+        <value type="string" value="MSM Notifier"/>
+      </property>
+      <property name="symbolic-icons" type="bool" value="false"/>
+    </property>
+    <property name="plugin-7" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+  </property>
+  <property name="configver" type="int" value="2"/>
+</channel>

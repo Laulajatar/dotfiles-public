@@ -1,0 +1,396 @@
+; Custom Modules
+; --------------
+
+; notepad: nf-fa-magic nf-fa-steam  nf-fae-butterfly nf-mdi-creation nf-mdi-flower  nf-mdi-folder_image nf-mdi-folder_open nf-mdi-image_filter_vintage nf-mdi-looks
+
+[module/thunarmenu]
+type = custom/menu
+expand-right = true
+menu-0-0 = "%{T1}ﮛ%{T1} Games"
+menu-0-0-exec = thunar /home/laula/Games &
+menu-0-1 = "%{T1} %{T1} Screenshots"
+menu-0-1-exec = thunar /home/laula/Pictures/Screenshots &
+menu-0-2 = "%{T1} %{T1} Downloads"
+menu-0-2-exec = thunar /home/laula/Downloads &
+menu-0-3 = "%{T1} %{T1} Arbeit"
+menu-0-3-exec = thunar /home/laula/Dropbox/Freigaben/Arbeit &
+
+format = <label-toggle> <menu>
+format-background = ${colors.shade1}
+format-foreground = ${colors.white}
+format-padding = 0
+
+label-open = "%{T1}ﱮ %{T1} "
+label-close = "%{T1}%{T1}"
+label-separator = "  "
+
+
+
+[module/cheesemenu]
+type = custom/menu
+expand-right = true
+menu-0-0 = "%{T1}ﯦ%{T1} White"
+menu-0-0-exec = g512-led -p /home/laula/.apps/g810-led/static &
+menu-0-1 = "%{T1} %{T1} Rainbow"
+menu-0-1-exec = g512-led -p /home/laula/.apps/g810-led/rainbow &
+menu-0-2 = "%{T1} %{T1} Groups"
+menu-0-2-exec = g512-led -p /home/laula/.apps/g810-led/groups &
+menu-0-3 = "%{T1}望%{T1} Night"
+menu-0-3-exec = g512-led -p /home/laula/.apps/g810-led/night &
+
+format = <label-toggle> <menu>
+format-background = ${colors.shade4}
+format-foreground = ${colors.white}
+format-padding = 0
+
+label-open = "%{T1} %{T1}"
+label-close = "%{T1} %{T1}"
+label-separator = " | "
+
+
+[module/polywins]
+type = custom/script
+exec = ~/.config/polybar/scripts/polywins.sh 2>/dev/null
+format = <label>
+label = %{T0}%output%
+label-padding = 1
+tail = true
+
+
+
+[module/weather]
+type = custom/script
+exec = ~/.config/polybar/scripts/openweathermap-simple.sh
+interval = 60
+format = <label>
+label-background = ${colors.shade2}
+label-foreground = ${colors.white}
+label = %{T0}%output%%{T-}
+
+
+
+[module/calendar]
+type = custom/text
+content-background = ${colors.shade2}
+content-foreground =  ${colors.white}
+content = "  %{T1}%{T-}  "
+click-right = yad --calendar --css ~/.config/polybar/scripts/calendar.css --fixed --close-on-unfocus --no-buttons --posx 1550 --show-weeks &
+click-left = yad --calendar --css ~/.config/polybar/scripts/calendar.css --fixed --close-on-unfocus --no-buttons --posx 1560 &
+
+
+
+[module/calendar2]
+type = custom/text
+content-background = ${colors.shade2}
+content-foreground =  ${colors.white}
+content =  "  %{T1}%{T-}  "
+click-right = yad --calendar --css ~/.config/polybar/scripts/calendar.css --fixed --close-on-unfocus --no-buttons --posx 3460 --show-weeks -css calendar.css &
+click-left = yad --calendar --css ~/.config/polybar/scripts/calendar.css --fixed --close-on-unfocus --no-buttons --posx 3470 &
+
+
+
+[module/note]
+type = custom/text
+content-background = ${colors.shade4}
+content-foreground =  ${colors.white}
+content = "  %{T1}ﱘ  %{T-}"
+click-left = xfce4-terminal --hide-menubar -e ncmpcpp &
+click-right = pavucontrol &
+
+
+
+[module/cheese]
+type = custom/text
+content-background = ${colors.shade4}
+content-foreground =  ${colors.white}
+content = "%{T1poly}  %{T-}"
+click-left = g512-led -p /home/laula/.apps/g810-led/static &
+click-right = g512-led -p /home/laula/.apps/g810-led/rainbow &
+click-middle = g512-led -p /home/laula/.apps/g810-led/night &
+
+
+
+[module/audio]
+type = custom/text
+content-background = ${colors.shade1}
+content-foreground =  ${colors.foreground}
+content = "%{T1poly}  %{T-}"
+click-left = pactl set-card-profile 0 off
+click-right = pactl set-card-profile 0 output:analog-stereo+input:mono-fallback
+
+
+
+[module/discord]
+type = custom/text
+content-background = ${colors.shade1}
+content-foreground =  ${colors.foreground}
+content = "%{T1}ﭮ%{T-}  "
+click-left = /usr/bin/discord &
+click-right = /usr/bin/discover-overlay &
+click-middle = /usr/bin/discover-overlay --close &
+
+
+
+[module/firefox]
+type = custom/text
+content-background = ${colors.shade1}
+content-foreground =  ${colors.foreground}
+content = "%{T1}%{T-}  "
+click-left = firefox &
+click-right = firefox --private-window &
+
+
+
+[module/books]
+type = custom/text
+content-background = ${colors.shade1}
+content-foreground = ${colors.foreground}
+content = "%{T1}  %{T-}"
+click-left = calibre --detach %F &
+click-right = ~/.apps/sh/kindle2.sh &
+click-middle = thunar /home/laula/Dropbox/MyEBooks/ &
+
+
+
+[module/art]
+type = custom/text
+content-background = ${colors.shade1}
+content-foreground =  ${colors.foreground}
+content = "%{T1}%{T-}  "
+click-left = krita &
+click-right = gcolor2 &
+
+
+
+[module/dropbox]
+type = custom/text
+content-background = ${colors.shade1}
+content-foreground = ${colors.foreground}
+content = "%{T1}  %{T-}"
+click-left = thunar /home/laula/Dropbox &
+click-right = firefox https://www.dropbox.com/h &
+
+
+
+; Default Modules
+; ---------------
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+blacklist-1 = caps lock
+
+format-background = ${colors.shade3}
+
+format-prefix = "  %{T1}%{T-}  "
+format-prefix-foreground = ${colors.white}
+format-prefix-underline = ${colors.white}
+
+label-layout = %layout%
+label-layout-underline = ${colors.white}
+label-layout-foreground = ${colors.white}
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.white}
+label-indicator-underline = ${colors.white}
+
+
+
+[module/date]
+type = internal/date
+interval = 5
+
+date = "%a %d %b, "
+date-alt = "%a %d %b, "
+
+time = %H:%M
+time-alt = %H:%M
+
+;;format-prefix = "%{T1}%{T-}  "
+format-prefix-foreground = #ffffff
+label-foreground = #ffffff
+format-background = ${colors.shade2}
+format-underline = #0a6cf5
+
+label = %date% %time%
+
+
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+
+format-volume-background = ${colors.shade1}
+label-muted-background = ${colors.shade1}
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%%
+
+ramp-volume-foreground = ${colors.white}
+label-volume-foreground = ${colors.white}
+label-muted = " %{T1}婢%{T-}  --%"
+format-muted-prefix = 
+label-muted-foreground = ${colors.white}
+
+ramp-volume-0 = " %{T1}墳%{T-}  "
+ramp-volume-1 = " %{T1}墳%{T-}  "
+ramp-volume-2 = " %{T1}墳%{T-}  "
+
+
+[module/workspaces]
+type = internal/xworkspaces
+
+pin-workspaces = false
+enable-click = true
+enable-scroll = false
+
+icon-default = 
+label-active = %{T2}%{T-} 
+label-occupied =   
+label-urgent = 
+label-empty = 
+
+label-active-font = 2
+label-occupied-font = 2  
+label-urgent-font = 2
+label-empty-font = 2
+
+format = <label-state>
+format-background = ${colors.shade3}
+
+label-empty-padding = 1
+label-active-padding = 1
+label-urgent-padding = 1
+label-occupied-padding = 1
+
+label-empty-foreground = ${colors.foreground}
+label-active-foreground = ${colors.foreground}
+label-urgent-foreground = ${colors.foreground}
+label-occupied-foreground = ${colors.foreground}
+
+
+
+[module/temperature]
+type = internal/temperature
+interval = 0.5
+thermal-zone = 0
+hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon1/temp1_input
+format-background = ${colors.shade2}
+label-foreground = ${colors.foreground}
+format-prefix = "%{T2}%{T-}  "
+label-font = 4
+label = "%temperature-c% "
+
+
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "%{T1}  %{T-}"  
+format-prefix-foreground = ${colors.foreground}
+label-foreground = ${colors.foreground}
+format-background = ${colors.shade3}
+label = "%percentage:2%% "
+label-font = 4
+
+
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "  %{T1}%{T-}  "
+format-background = ${colors.shade3}
+label-foreground = ${colors.foreground}
+label = "%percentage_used%% "
+label-font = 4
+
+
+
+[module/mpd]
+type = internal/mpd
+
+; Host where mpd is running (either ip or domain name)
+; Can also be the full path to a unix socket where mpd is running.
+host = 127.0.0.1
+port = 6601
+password = 
+;label-song = 
+format-online = <icon-prev> <toggle> <icon-next> - <icon-repeat> <icon-random> <icon-single> 
+
+icon-play = "%{T1}懶%{T-}  "
+icon-pause = "%{T1}懶%{T-}  "
+icon-prev = "%{T1}玲%{T-}  "
+icon-next = "%{T1}怜%{T-}  "
+icon-random = "%{T1}%{T-}  "
+icon-repeat = "%{T1}%{T-}  "
+icon-single = "%{T1}綾%{T-}  "
+
+toggle-on-foreground = #ff0000
+toggle-off-foreground = #550000
+
+; Seconds to sleep between progressbar/song timer sync
+; Default: 1
+interval = 2
+
+
+
+; Decorative Modules
+; ------------------
+; option is  
+; or " " ""
+
+[module/left1]
+type = custom/text
+content-background = ${colors.background}
+content-foreground = ${colors.shade1}
+content = "%{T3}%{T-}"
+
+[module/left2]
+type = custom/text
+content-background = ${colors.shade1}
+content-foreground = ${colors.shade2}
+content = "%{T3}%{T-}"
+
+[module/left3]
+type = custom/text
+content-background = ${colors.shade2}
+content-foreground = ${colors.shade3}
+content = "%{T3}%{T-}"
+
+[module/left4]
+type = custom/text
+content-background = ${colors.shade3}
+content-foreground = ${colors.shade4}
+content = "%{T3}%{T-}"
+
+[module/right1]
+type = custom/text
+content-background = ${colors.background}
+content-foreground = ${colors.shade1}
+content = "%{T3}%{T-}"
+
+[module/right2]
+type = custom/text
+content-background = ${colors.shade1}
+content-foreground = ${colors.shade2}
+content = "%{T3}%{T-}"
+
+[module/right3]
+type = custom/text
+content-background = ${colors.shade2}
+content-foreground = ${colors.shade3}
+content = "%{T3}%{T-}"
+
+[module/right4]
+type = custom/text
+content-background = ${colors.shade3}
+content-foreground = ${colors.shade4}
+content = "%{T3}%{T-}"
+

@@ -1,0 +1,29 @@
+(
+    if (is (window_name) "TES Construction Set")
+         (begin
+              (geometry "1900x66+10+35")
+         )       
+
+
+    if (contains (window_name) "CSE Script Editor")
+         (begin
+              (geometry "901x472+1009+121")
+         )
+
+
+     if (and
+            (is (window_name) "Render Window")
+        )   
+          (begin
+             (geometry "940x1035+1930+0")
+          )
+        
+         
+    if (and
+            (is (application_name) "tesconstructionset.exe")
+            (is (window_name) "GlassPanelForm")
+       )
+         (begin
+              (close)
+         )
+)        

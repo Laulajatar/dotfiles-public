@@ -1,0 +1,5 @@
+MotionNotify 0 0
+ButtonPress 1
+MotionNotify 1919 1079
+Delay 500
+ButtonRelease 1

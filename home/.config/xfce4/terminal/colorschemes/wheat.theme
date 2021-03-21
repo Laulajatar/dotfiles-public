@@ -1,0 +1,9 @@
+[Scheme]
+Name=Wheat
+ColorCursor=#D8DEE9
+ColorForeground=#D8DEE9
+ColorBackground=#2E3440
+TabActivityColor=#88C0D0
+ColorPalette=rgb(59,66,82);rgb(192,172,158);rgb(248,228,180);rgb(231,204,147);rgb(132,148,162);rgb(132,140,164);rgb(180,188,194);rgb(229,233,240);rgb(76,86,106);rgb(205,189,178);rgb(251,238,208);rgb(237,216,171);rgb(152,159,179);rgb(152,159,179);rgb(199,205,209);rgb(236,239,244)
+ColorBold=#D8DEE9
+ColorBoldUseDefault=FALSE

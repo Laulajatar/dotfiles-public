@@ -1,0 +1,9 @@
+[Scheme]
+Name=Mine
+ColorCursor=#D8DEE9
+ColorForeground=#D8DEE9
+ColorBackground=#2E3440
+TabActivityColor=#88C0D0
+ColorPalette=rgb(59,66,82);rgb(219,180,212);rgb(129,161,193);rgb(136,208,191);rgb(255,235,195);rgb(180,196,219);rgb(188,213,167);rgb(229,233,240);rgb(76,86,106);rgb(219,180,212);rgb(129,161,193);rgb(136,208,191);rgb(255,235,195);rgb(180,196,219);rgb(188,213,167);rgb(236,239,244)
+ColorBold=#D8DEE9
+ColorBoldUseDefault=FALSE

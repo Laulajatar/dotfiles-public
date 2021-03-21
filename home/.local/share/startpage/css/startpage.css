@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'meriendabold';
+    src: url('fonts/merienda/merienda-bold-webfont.woff2') format('woff2'),
+    url('fonts/merienda/merienda-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'meriendaregular';
+    src: url('fonts/merienda/merienda-regular-webfont.woff2') format('woff2'),
+    url('fonts/merienda/merienda-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('fonts/poppins/poppins-regular-webfont.woff2') format('woff2'),
+         url('fonts/poppins/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'poppinsthin';
+    src: url('fonts/poppins/poppins-thin-webfont.woff2') format('woff2'),
+         url('fonts/poppins/poppins-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body {    
+    background-color: #232731;
+	color: #9faab8;
+    font-family: 'poppinsregular', Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+#main {
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+	padding-top: 2em;
+    font-family: 'meriendabold', sans-serif;
+}
+
+
+#main-date {
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    font-family: 'poppinsthin', sans-serif;
+}
+
+#box {
+    height: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+.container {
+    background-color: #2F3542;
+    padding: 1.2em;
+    /*margin: 0em 2em 0em 2em;*/
+    height: 10em;
+    width: 5.2em;
+    box-shadow:  -1rem 0px 1em rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.container:hover {
+ transform: translateY(-1rem);   
+}
+
+.container:hover~.container {
+ transform: translateX(1rem);   
+}
+
+.container:not(:first-child){
+    margin-left: -1rem;
+}
+
+.con1 {
+ margin-top: 1rem;   
+}
+
+.con2 {
+ margin-top: 2rem;   
+}
+
+.con3 {
+ margin-top: 3rem;   
+}
+
+a, a:visited {
+    color: #9faab8;
+    text-decoration: none;
+}
+
+header {    
+    padding-bottom: 8px;
+    font-weight:bold;
+}
+
+.home a:hover, .home header {
+    color: #99BFCC; /* 848CA4 */
+}
+
+.games a:hover, .games header {
+    color: #99B3CC; /* 8494A2 */
+}
+
+.gw a:hover, .gw header {
+        color: #99A6CC; /* EDD8AB */
+}
+
+.tes a:hover, .tes header {
+        color: #CCCCCC; /* C0AC9E */
+}
+
+.pencil a:hover, .pencil header {
+        color: #F6D5A2; /* C0AC9E */
+}
+
+.dev a:hover, .dev header {
+        color: #F6DEA2; /* EDD8AB */
+}
+
+.shopping a:hover, .shopping header {
+        color: #C5A8A0; /* EDD8AB */
+}
+
+
+
+header {
+    text-align:center; 
+    padding-bottom: 1em;
+}
+
+.fas {
+ font-size: 3em;   
+ text-align: center;
+}

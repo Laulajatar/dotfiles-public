@@ -1,0 +1,16 @@
+calendar {
+	background-color: #383C4A;
+}
+calendar.highlight {
+ color: #99B3CC;
+}
+
+calendar.header {
+color: #F6DEA2;
+}
+
+
+calendar:selected {
+color: #232731;
+background-color: #8E9AB2;
+}

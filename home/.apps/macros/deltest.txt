@@ -1,0 +1,14 @@
+MotionNotify 2391 537
+ButtonPress 1
+Delay 72
+ButtonRelease 1
+Delay 1049
+MotionNotify 2468 823
+ButtonPress 1
+Delay 46
+ButtonRelease 1
+Delay 1075
+MotionNotify 3245 709
+ButtonPress 1
+Delay 74
+ButtonRelease 1

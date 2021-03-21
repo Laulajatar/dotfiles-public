@@ -1,0 +1,21 @@
+[colors]
+
+; Main Colors
+background = #30343F
+foreground = #f7f7f7
+transparent = #00000000
+white = #FFFFFF
+black = #000000
+grey = #b3b3b3
+
+
+; Shades  Bright > Dark
+shade1 = #8d94a5
+shade2 = #70798f
+shade3 = #555c6c
+shade4 = #404552
+shade5 = #7fe6cc
+
+
+
+

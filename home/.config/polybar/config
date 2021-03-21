@@ -1,0 +1,131 @@
+;A simple polybar theme by @arashsm79
+;==============
+; polybar -c /home/laula/.config/polybar/config main
+; restart: polybar-msg cmd restart
+
+include-file = ~/.config/polybar/colors
+include-file = ~/.config/polybar/modules
+
+
+
+
+; FIRST SCREEN BAR
+; ----------------
+
+[bar/main]
+width = 93%
+height = 25
+offset-x = 2%
+offset-y = 0%
+radius = 0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = "Poppins:style=Regular:pixelsize=10;2" 
+font-1 = "Iosevka Nerd Font:style=Regular:size=12;3" 
+font-2 = "Iosevka Nerd Font:style=Regular:size=16;4" 
+font-3 = "Consolas Nerd Font:style=Regular:size=10;4" 
+
+pseudo-transparency = false
+
+line-size = 0
+border-color = ${colors.white}
+
+; padding 0 so they line up with the xfce panels
+padding-left = 0
+padding-right = 0
+
+;with margin the single modules dont line up
+module-margin-left = 
+module-margin-right = 0
+
+; to allow restarting with polybar-msg cmd restart
+enable-ipc = true
+
+modules-left = cheesemenu left4 workspaces left3 weather left2 firefox discord audio books art thunarmenu left1
+modules-center = polywins
+modules-right =  right1 pulseaudio right2 calendar date right3 xkeyboard right4 note
+
+tray-position = none
+tray-detached = false
+tray-maxsize = 16
+tray-transparent = false
+tray-background = ${colors.background}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1.0
+override-redirect = false 
+dpi = 0
+cursor-click = pointer
+cursor-scroll = ns-resize
+wm-name = xfwm4
+
+
+
+
+; SECOND SCREEN BAR
+; -----------------
+
+[bar/second]
+monitor=DP-2
+width = 88%
+height = 25
+offset-x = 7%
+offset-y = 0%
+radius = 0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = "Poppins:style=Regular:pixelsize=10;2" 
+font-1 = "Iosevka Nerd Font:style=Regular:size=12;3" 
+font-2 = "Iosevka Nerd Font:style=Regular:size=16;4" 
+font-3 = "Consolas Nerd Font:style=Regular:size=10;4" 
+
+pseudo-transparency = false
+
+line-size = 0
+border-color = ${colors.white}
+
+; padding 0 so they line up with the xfce panels
+padding-left = 0
+padding-right = 0
+
+;with margin the single modules dont line up
+module-margin-left = 
+module-margin-right = 0
+
+; to allow restarting with polybar-msg cmd restart
+enable-ipc = true
+
+modules-left = left4 cpu memory left3 temperature left2 firefox discord audio books art thunarmenu left1
+modules-center = polywins
+modules-right =  right1 pulseaudio right2 calendar2 date right3 xkeyboard right4 note
+
+tray-position = none
+tray-detached = false
+tray-maxsize = 16
+tray-transparent = false
+tray-background = ${colors.background}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1.0
+override-redirect = false 
+dpi = 0
+cursor-click = pointer
+cursor-scroll = ns-resize
+wm-name = xfwm4
+
+[settings]
+screenchange-reload = true
+pseudo-transparency = true 
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+

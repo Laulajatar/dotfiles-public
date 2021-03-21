@@ -1,0 +1,6 @@
+(
+    if (contains (application_name) "Discord")
+         (begin
+              (stick)
+         )
+)        

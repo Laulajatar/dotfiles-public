@@ -1,0 +1,142 @@
+# Sample profile by groups keys
+
+#fx cycle all 50 # Set horizontal wave effect with speed 
+
+#Vars E7CC93 848CA4 #8494A2 #C0AC9E
+var top 596ba6
+var outer 8fa5bc #b3cce6
+var inner E7CC93 #dab158
+var wasd E7CC93
+var between 8080b3
+var special1 596ba6 #e99b63
+var special2 8fa5bc
+
+# Outer
+
+# Top
+k escape $special1
+k f1 $top
+k f2 $top
+k f3 $top
+k f4 $top
+
+k f5 $top
+k f6 $top
+k f7 $top
+k f8 $top
+
+k f9 $top
+k f10 $top
+k f11 $top
+k f12 $top
+
+k print_screen $special1
+k scroll_lock $top
+k pause $top
+
+
+# Line 2
+k tilde $outer
+k 1 $outer
+k 2 $outer
+k 3 $outer
+k 4 $outer
+k 5 $outer
+k 6 $outer 
+k 7 $outer 
+k 8 $outer 
+k 9 $outer
+k 0 $outer
+k minus $outer
+k equal $outer
+k backspace $outer
+
+k insert $between
+k home $between
+k page_up $between
+k numlock $outer
+k num_slash $outer
+k num_asterisk $outer
+k num_minus $outer
+
+# Line 3
+k tab $outer
+k q $inner
+k w $wasd
+k e $inner
+k r $inner
+k t $inner
+k y $inner
+k u $inner
+k i $inner
+k o $inner
+k p $inner
+k open_bracket $inner
+k close_bracket $inner
+k backslash $outer
+k delete $between
+k end $between
+k page_down $between
+k num7 $inner
+k num8 $inner
+k num9 $inner
+k num_plus $outer
+
+# Line 4
+k caps_lock $outer
+k a $wasd
+k s $wasd
+k d $wasd
+k f $inner
+k g $inner 
+k h $inner
+k j $inner
+k k $inner
+k l $inner
+k semicolon $inner
+k quote $inner
+k enter $outer
+k num4 $inner
+k num5 $inner
+k num6 $inner
+
+# Line 5 
+k shift_left $outer
+k z $inner
+k x $inner
+k c $inner
+k v $inner
+k b $inner
+k n $inner
+k m $inner
+k comma $inner
+k period $inner
+k slash $inner
+k shift_right $outer
+k top $between
+k num1 $inner 
+k num2 $inner
+k num3 $inner
+k numenter $outer
+
+# Line 6 
+k ctrl_left $outer
+k win_left $special2
+k alt_left $outer
+k space $outer
+k alt_right $outer
+k win_right $outer
+k menu $special2
+k ctrl_right $outer
+
+k left $between
+k bottom $between
+k right $between
+k num0 $outer
+k num_period $outer
+
+
+g indicators $orchid
+
+
+c # Commit changes

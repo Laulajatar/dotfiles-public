@@ -1,0 +1,158 @@
+# Sample profile by groups keys
+
+#fx cycle all 50 # Set horizontal wave effect with speed 
+
+#Vars
+var red ff0000
+var darkorange ff4000
+var orange ff8000
+var salmon ffbf00
+var yellow ffff00
+var spring bfff00
+var green1 80ff00
+var green2 40ff00
+var green3 00ff00
+var green4 00ff40
+var green5 00ff80
+var mint 00ffbf
+var cyan 00ffff
+var blue1 00bfff
+var blue2 0080ff
+var blue3 0040ff
+var blue4 0000ff
+var blue5 4000ff
+var violet 8000ff
+var purple bf00ff
+var pink ff00ff
+var magenta ff00bf
+var orchid ff0080
+var pinkred ff0040
+var white ffffff
+var black 000000
+
+
+# Line 1
+k escape $darkorange
+k f1 $orange
+k f2 $salmon
+k f3 $yellow
+k f4 $spring
+
+k f5 $green2
+k f6 $green4
+k f7 $green5
+k f8 $mint
+
+k f9 $blue1
+k f10 $blue2
+k f11 $blue4
+k f12 $blue5
+
+k print_screen $violet
+k scroll_lock $purple
+k pause $pink
+
+
+# Line 2
+k tilde $red
+k 1 $darkorange
+k 2 $orange
+k 3 $salmon
+k 4 $yellow
+k 5 $spring
+k 6 $green1 
+k 7 $green2 
+k 8 $green4 
+k 9 $green5
+k 0 $mint
+k minus $cyan
+k equal $blue1
+k backspace $blue2
+k insert $blue5
+k home $violet
+k page_up $purple
+k numlock $pink
+k num_slash $magenta
+k num_asterisk $orchid
+k num_minus $pinkred
+
+# Line 3
+k tab $red
+k q $darkorange
+k w $orange
+k e $salmon
+k r $yellow
+k t $spring
+k y $green1
+k u $green2
+k i $green4
+k o $green5
+k p $mint
+k open_bracket $cyan
+k close_bracket $blue1
+k backslash $blue2
+k delete $blue4
+k end $blue5
+k page_down $violet
+k num7 $purple
+k num8 $pink
+k num9 $magenta
+k num_plus $orchid
+
+# Line 4
+k caps_lock $red 
+k a $darkorange
+k s $orange
+k d $salmon
+k f $yellow
+k g $spring 
+k h $green1
+k j $green2
+k k $green4
+k l $green5
+k semicolon $mint
+k quote $cyan
+k enter $blue1
+k num4 $violet
+k num5 $purple
+k num6 $pink
+
+# Line 5 
+k shift_left $red
+k z $darkorange
+k x $orange
+k c $salmon
+k v $yellow
+k b $spring
+k n $green1
+k m $green2
+k comma $green4
+k period $green5
+k slash $mint
+k shift_right $cyan
+k top $blue4
+k num1 $blue5 
+k num2 $violet
+k num3 $purple
+k numenter $pink
+
+# Line 6 
+k ctrl_left $pinkred
+k win_left $red
+k alt_left $darkorange
+k space $yellow
+k alt_right $green4
+k win_right $green5
+k menu $mint
+k ctrl_right $cyan
+k left $blue1
+k bottom $blue2
+k right $blue4
+k num0 $blue5
+k num_period $violet
+
+
+g indicators $orchid
+
+
+c # Commit changes

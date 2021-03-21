@@ -1,0 +1,9 @@
+[Scheme]
+Name=Wheatfield
+ColorCursor=#D8DEE9
+ColorForeground=#D8DEE9
+ColorBackground=#232327273131
+TabActivityColor=#88C0D0
+ColorPalette=rgb(64,71,89);rgb(187,155,144);rgb(243,202,138);rgb(244,212,139);rgb(153,191,204);rgb(153,179,204);rgb(169,177,188);rgb(225,229,237);rgb(75,83,104);rgb(197,168,160);rgb(246,213,162);rgb(246,222,162);rgb(171,201,212);rgb(170,191,212);rgb(183,190,200);rgb(235,238,244)
+ColorBold=#D8DEE9
+ColorBoldUseDefault=FALSE
