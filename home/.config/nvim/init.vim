@@ -9,6 +9,9 @@ call plug#begin('~/.local/share/vim-plug')
 " Shameless clone of nord
 Plug '/home/laula/.config/nvim/colors/wheat' 
 
+" Another Shameless clone of nord
+Plug '/home/laula/.config/nvim/colors/spring' 
+
 " nerdtree file browser
 Plug 'preservim/nerdtree'
 
@@ -87,10 +90,10 @@ source ~/.config/nvim/config/vimwiki.vim
 " Random settings that might actually one day get their own config. 
 " Might.
 
+" disable CSE connection because I am a peasant with normal CS
 let g:ov_disable_cse = 1
 
-" set complete-=t
-" set complete-=i
-"
-set dictionary+="~/Documents/ObseScript/AllOblivionFuncs.txt"
+" Make it so there is only autocomplete when i press the key
 let g:vsc_type_complete_length = 500
+
+

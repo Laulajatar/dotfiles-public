@@ -149,7 +149,7 @@ n ()
 }
 
 # Bookmarks
-export NNN_BMS='d:~/Downloads;.:~/Dropbox/Linux/dotfiles/;a:~/Dropbox/Freigaben/Arbeit;w:~/.apps/sh;p:~/.config/polybar;n:~/Dropbox/Schreiben/New World;c:~/Romhacking/polishedcrystal'
+export NNN_BMS='d:~/Downloads;.:~/Dropbox/Linux/dotfiles/;a:~/Dropbox/Freigaben/Arbeit;w:~/.apps/sh;p:~/.config/polybar;n:~/Dropbox/Schreiben/New World;c:~/Romhacking/polishedcrystal;m:~/Games/my-oblivion-mods;y:~/Documents/Python/sololearn'
 export NNN_COLORS="2222"                           # use a different color for each context
 export NNN_TRASH=1                                 # trash (needs trash-cli) instead of delete
 

@@ -182,7 +182,7 @@ if [[ $backupXfce == "true" ]]; then
 
     if [[ $backupType == "full" ]]; then
       
-        echo -e "\n${blue}krita configs and stuff${none}"
+        echo -e "\n${blue}krita, calibre, vlc and stuff${none}"
 
         dir=~/.config
         files="krita*"
@@ -192,6 +192,10 @@ if [[ $backupXfce == "true" ]]; then
         findFiles "$dir" "$files"
 
         dir=~/.config/calibre
+        files="*"
+        findFiles "$dir" "$files"
+
+        dir=~/.config/vlc
         files="*"
         findFiles "$dir" "$files"
 
@@ -205,6 +209,12 @@ dir=~/.config/neofetch
 files="*"
 findFiles "$dir" "$files"
 
+
+echo -e "\n${blue}discocss${none}"
+
+dir=~/.config/discocss
+files="*.css"
+findFiles "$dir" "$files"
 
 # Not sure if keeping public, leave it for now
 echo -e "\n${blue}redshift config${none}"
@@ -247,9 +257,10 @@ files="*"
 findFiles "$dir" "$files"
 
 
-# Startpage currently is not stored outside repo because why would it
+# Startpage
 dir=~/.local/share/startpage
 files="*"
+findFiles "$dir" "$files"
 
 
 # Stuff in the .apps directories
@@ -300,7 +311,7 @@ findFiles "$dir" "$files"
 
 if [[ $backupType == "full" ]]; then
 
-    echo -e "\n${blue}personal app configs (calibre etc)${none}"
+    echo -e "\n${blue}personal app configs${none}"
 
     dir=~/.config/kdeconnect
     files="*"
@@ -311,6 +322,12 @@ if [[ $backupType == "full" ]]; then
     findFiles "$dir" "$files"
     
     dir=~/.local/share/onboard
+    files="*"
+    findFiles "$dir" "$files"
+ 
+    echo -e "\n${blue}Reshade shaders${none}"
+
+    dir=~/.local/share/reshade
     files="*"
     findFiles "$dir" "$files"
 

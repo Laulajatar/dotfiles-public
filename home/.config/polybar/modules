@@ -6,14 +6,16 @@
 [module/thunarmenu]
 type = custom/menu
 expand-right = true
-menu-0-0 = "%{T1}ﮛ%{T1} Games"
-menu-0-0-exec = thunar /home/laula/Games &
-menu-0-1 = "%{T1} %{T1} Screenshots"
-menu-0-1-exec = thunar /home/laula/Pictures/Screenshots &
-menu-0-2 = "%{T1} %{T1} Downloads"
-menu-0-2-exec = thunar /home/laula/Downloads &
-menu-0-3 = "%{T1} %{T1} Arbeit"
-menu-0-3-exec = thunar /home/laula/Dropbox/Freigaben/Arbeit &
+menu-0-0 = "%{T1} %{T1} Screenshots"
+menu-0-0-exec = thunar /home/laula/Pictures/Screenshots &
+menu-0-1 = "%{T1}ﮛ%{T1}  Oblivion"
+menu-0-1-exec = thunar /home/laula/Games/oblivion/drive_c/Oblivion\ Mods/Bash\ Installers &
+menu-0-2 = "%{T1} %{T1} Morrowind"
+menu-0-2-exec = thunar /home/laula/Games/morrowind-goty/drive_c/mods &
+menu-0-3 = "%{T1} %{T1} Glasscherben"
+menu-0-3-exec = thunar /home/laula/Dropbox/Schreiben/New\ World &
+menu-0-4 = "%{T1} %{T1} Arbeit"
+menu-0-4-exec = thunar /home/laula/Dropbox/Freigaben/Arbeit &
 
 format = <label-toggle> <menu>
 format-background = ${colors.shade1}
@@ -24,6 +26,15 @@ label-open = "%{T1}ﱮ %{T1} "
 label-close = "%{T1}%{T1}"
 label-separator = "  "
 
+
+[module/windowtitle]
+type = custom/script
+exec = NAME=$(xdotool getwindowfocus getwindowname);echo "$NAME"
+interval = 1
+format = <label>
+label-background = ${colors.shade2}
+label-foreground = ${colors.white}
+label = %{T0}%output%%{T-}
 
 
 [module/cheesemenu]
@@ -74,8 +85,8 @@ type = custom/text
 content-background = ${colors.shade2}
 content-foreground =  ${colors.white}
 content = "  %{T1}%{T-}  "
-click-right = yad --calendar --css ~/.config/polybar/scripts/calendar.css --fixed --close-on-unfocus --no-buttons --posx 1550 --show-weeks &
-click-left = yad --calendar --css ~/.config/polybar/scripts/calendar.css --fixed --close-on-unfocus --no-buttons --posx 1560 &
+click-right = yad --calendar --css ~/.config/polybar/scripts/calendar.css --fixed --close-on-unfocus --no-buttons --posy 30 --posx 1550 --show-weeks &
+click-left = yad --calendar --css ~/.config/polybar/scripts/calendar.css --fixed --close-on-unfocus --no-buttons --posy 30 --posx 1560 &
 
 
 
@@ -84,8 +95,8 @@ type = custom/text
 content-background = ${colors.shade2}
 content-foreground =  ${colors.white}
 content =  "  %{T1}%{T-}  "
-click-right = yad --calendar --css ~/.config/polybar/scripts/calendar.css --fixed --close-on-unfocus --no-buttons --posx 3460 --show-weeks -css calendar.css &
-click-left = yad --calendar --css ~/.config/polybar/scripts/calendar.css --fixed --close-on-unfocus --no-buttons --posx 3470 &
+click-right = yad --calendar --css ~/.config/polybar/scripts/calendar.css --fixed --close-on-unfocus --no-buttons --posy 30 --posx 3460 --show-weeks -css calendar.css &
+click-left = yad --calendar --css ~/.config/polybar/scripts/calendar.css --fixed --close-on-unfocus --no-buttons --posy 30 --posx 3470 &
 
 
 
@@ -125,7 +136,7 @@ type = custom/text
 content-background = ${colors.shade1}
 content-foreground =  ${colors.foreground}
 content = "%{T1}ﭮ%{T-}  "
-click-left = /usr/bin/discord &
+click-left = discocss &
 click-right = /usr/bin/discover-overlay &
 click-middle = /usr/bin/discover-overlay --close &
 
@@ -157,8 +168,8 @@ type = custom/text
 content-background = ${colors.shade1}
 content-foreground =  ${colors.foreground}
 content = "%{T1}%{T-}  "
-click-left = krita &
-click-right = gcolor2 &
+click-right = krita &
+click-left = gcolor3 &
 
 
 
@@ -168,7 +179,7 @@ content-background = ${colors.shade1}
 content-foreground = ${colors.foreground}
 content = "%{T1}  %{T-}"
 click-left = thunar /home/laula/Dropbox &
-click-right = firefox https://www.dropbox.com/h &
+click-right = firefox https://www.dropbox.com/home &
 
 
 
@@ -296,7 +307,7 @@ interval = 2
 format-prefix = "%{T1}  %{T-}"  
 format-prefix-foreground = ${colors.foreground}
 label-foreground = ${colors.foreground}
-format-background = ${colors.shade3}
+format-background = ${colors.shade1}
 label = "%percentage:2%% "
 label-font = 4
 
@@ -306,7 +317,7 @@ label-font = 4
 type = internal/memory
 interval = 2
 format-prefix = "  %{T1}%{T-}  "
-format-background = ${colors.shade3}
+format-background = ${colors.shade1}
 label-foreground = ${colors.foreground}
 label = "%percentage_used%% "
 label-font = 4

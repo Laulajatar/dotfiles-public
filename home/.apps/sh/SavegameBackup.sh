@@ -16,16 +16,36 @@ none='\033[0m'
 # Functions go here
 
 findFiles() {
-    find $1 -type f -name "$2" -exec sh -c '\
+    find "$1" -type f -name "$2" -exec sh -c '\
         file=$(readlink -f "{}") \
-        && if [[ $file != *"Session.vim" ]]; then dest='"$backupPath$pathAdd"'${file#*$HOME} \
+        && if [[ $file != *"Session.vim" ]]; then dest='"$backupPath"'/'"$pathAdd"'${file#*$HOME} \
+        && if [[ -f "$dest" ]]; then if [[ $file -nt $dest ]]; \
+        then echo -e "\033[0;33mFound file:\033[0m $file" ; fi; \
+        else echo -e "\033[0;33mFound file:\033[0m $file"; fi \
+         ; fi' \
+        \;
+    dest="$backupPath/$pathAdd"
+    mkdir -p "$dest"
+    cp -r -u "$dir" "$dest"
+    }
+
+
+fbacks() {
+    find "$1" -type f -name "$2" -exec sh -c '\
+        file=$(readlink -f "{}") \
+        && if [[ $file != *"Session.vim" ]]; then dest='"$backupPath"'/'"$pathAdd"'${file#*$HOME} \
         && if [[ -f "$dest" ]]; then if [[ $file -nt $dest ]]; \
         then echo -e "\033[0;33mChanged file:\033[0m $file \033[0;33m->\033[0m $dest" ; fi; \
         else echo -e "\033[0;33mNew file:\033[0m $file \033[0;33m->\033[0m $dest"; fi \
-        && mkdir -p $(dirname $dest) \
+        && temp=$(dirname "$dest") \
+        && mkdir -p "$temp" \
         && cp -u "$file" "$dest"; fi' \
         \;
+    dest='"$backupPath"'/'"$pathAdd"'
+    mkdir -p "$dest"
+    cp -r -u "$dir" "$pathAdd"
     }
+
 
 # Rest goes here
 
@@ -65,28 +85,55 @@ echo
 
 # }}}
 
-# Public stuff {{{
-
-# Stuff in home
-pathAdd=/home
+# Savegames {{{
 
 echo -e "\n${blue}emulation${none}"
 
+pathAdd="EmulationGBA"
 dir=~/Games/emulation/gba
 files="*.sav"
-findFiles "$dir" "$files"
+findFiles "$dir" "$files" 
 
+pathAdd="EmulationGC"
 dir=~/.local/share/dolphin-emu/GC/
 files=""
 findFiles "$dir" "$files"
 
 
-echo -e "\n${blue}games${none}"
+echo -e "\n${blue}Stardew Valley${none}"
 
+pathAdd="StardewValley"
 dir=~/.config/StardewValley/Saves
 files="*"
 findFiles "$dir" "$files"
 
+echo -e "\n${blue}Valheim${none}"
+
+pathAdd="Valheim"
+dir=~/.config/unity3d/IronGate/Valheim
+files="*"
+findFiles "$dir" "$files"
+
+echo -e "\n${blue}Dragon Quest${none}"
+
+pathAdd="DragonQuest"
+dir="/mnt/Games/SteamLibrary/steamapps/compatdata/1295510/pfx/drive_c/users/steamuser/My Documents/My Games/DRAGON QUEST XI S/Steam/91049462/Saved/SaveGames/"
+files="*"
+findFiles "$dir" "$files"
+
+echo -e "\n${blue}Guild Wars - Templates${none}"
+
+pathAdd="GuildWarsTemplates"
+dir="/home/laula/Games/guild-wars/drive_c/users/laula/My Documents/Guild Wars/Templates/"
+files="*"
+findFiles "$dir" "$files"
+
+pathAdd="GuildWars2Templates"
+dir="/home/laula/Games/guild-wars-2/drive_c/Program Files/Guild Wars 2/addons/arcdps/arcdps.buildpad/"
+files="*"
+findFiles "$dir" "$files"
+
+# }}}
 
 
 echo -e "${yellow}Thanks for stopping by! Bye.${none}" 

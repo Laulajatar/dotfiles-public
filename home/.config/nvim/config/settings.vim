@@ -36,7 +36,7 @@ syntax on
 let NERDTreeShowHidden=1
 
 " It's in the wheat folder but still called nord rip me
-colorscheme nord
+colorscheme wheat
 " idk why this didn't work, leave it here to figure out one day
 " let g:nord_italic_comments=1
 
@@ -47,3 +47,6 @@ augroup END
 
 " Allow mouse controls
 set mouse=a
+
+" File ignore case
+set fic

@@ -272,6 +272,9 @@ generate_window_list() {
             "et" ) w_name="office" ;;
             "inkscape.inkscape.inkscape" ) w_name="inkscape" ;;
             "x86_64.valheim.x86_64" ) w_name="valheim" ;;
+            "steam_app_1295510" ) w_name="dragon quest xi" ;;
+            "eocapp" ) w_name="divinity: original sin" ;;
+            "xfce4-terminal" ) w_name="music" ;;
         esac
 
 		# Truncate displayed name to user-selected limit

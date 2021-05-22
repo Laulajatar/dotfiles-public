@@ -19,6 +19,7 @@ case "$NAME" in
     "Dolphin"*) PREFIX="Emulator-Dolphin" ;;
     "Tell Me Why"*) PREFIX="TellMeWhy" ;;
     *"Valheim"*) PREFIX="Valheim" ;;
+    *"DRAGON QUEST"*) PREFIX="DragonQuest" ;;
 esac
 
 if [[ $PREFIX == "Screenshot" ]]; then

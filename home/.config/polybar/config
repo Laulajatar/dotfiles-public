@@ -44,7 +44,7 @@ module-margin-right = 0
 ; to allow restarting with polybar-msg cmd restart
 enable-ipc = true
 
-modules-left = cheesemenu left4 workspaces left3 weather left2 firefox discord audio books art thunarmenu left1
+modules-left = cheesemenu left4 workspaces left3 weather left2 firefox discord audio books art dropbox thunarmenu left1
 modules-center = polywins
 modules-right =  right1 pulseaudio right2 calendar date right3 xkeyboard right4 note
 
@@ -71,9 +71,9 @@ wm-name = xfwm4
 
 [bar/second]
 monitor=DP-2
-width = 88%
+width = 87%
 height = 25
-offset-x = 7%
+offset-x = 8%
 offset-y = 0%
 radius = 0
 fixed-center = false
@@ -102,7 +102,7 @@ module-margin-right = 0
 ; to allow restarting with polybar-msg cmd restart
 enable-ipc = true
 
-modules-left = left4 cpu memory left3 temperature left2 firefox discord audio books art thunarmenu left1
+modules-left = left4 workspaces left3 temperature left2 cpu memory left1
 modules-center = polywins
 modules-right =  right1 pulseaudio right2 calendar2 date right3 xkeyboard right4 note
 

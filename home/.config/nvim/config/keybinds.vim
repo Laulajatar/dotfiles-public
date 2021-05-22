@@ -40,3 +40,6 @@ nnoremap <F8> gg"_dGP
 
 " I fucking give up, let me save already 
 cnoremap W w
+
+" Pls
+cnoremap Q qall

@@ -9,21 +9,31 @@ Themes
 **Xfwm theme**  
 [2bxfwm window manager theme Github](https://github.com/addy-dclxvi/xfwm4-theme-collections)    
 with adjusted colors   
-Moon is inactive grey, active blue    
-Sun is inactive blue, active yellow   
+Moon is inactive grey, active blue.    
+Sun is inactive blue, active yellow.   
 
 **GTK Theme**  
 Basically a mix of   
 [Arc Black Steel GTK Theme Github](https://github.com/rtlewis88/rtl88-Themes/tree/Arc-Black-COLORS)  and    
 [Arc Theme Github](https://github.com/jnsh/arc-theme)   
-where someone who has no idea what they are doing (me) ripped out parts of both and put them together to create some kind of monster that one day will gain consciousness and murder me in my sleep. It's mainly the colors of arc darker with the silver highlights and buttons of arc black steel, but behind that the css looks so horrible that one glance is enough to cause permanent mental damage, which is why I won't be sharing this.  
+where someone who has no idea what they are doing (me) ripped out parts of both and put them together to create some kind of monster that one day will gain consciousness and murder me in my sleep. It's mainly the colors of arc darker with the silver highlights and buttons of arc black steel, but behind that the css looks so horrible that one glance is enough to cause permanent mental damage, which is why I won't be sharing this.     
+Yes, I should have built it from scratch instead of editing the css, I know that *now*.
 
 Getting rid of GTK 3 CSD with    
 [gtk-nocsd Github](https://github.com/ZaWertun/gtk3-nocsd)  
 
+**QT Theme**    
+I murdered the Arc Dark theme that came with the Kvantum theme engine. Only slightly less gruesome than the GTK3 murder.
+
 **Neovim Theme**  
-Edited the nord theme with my own colors since I am too lazy to figure out how to make one from scratch  
+Edited the nord theme with my own colors since I am too lazy to figure out how to make one from scratch.  
 [Nord-vim theme Github](https://github.com/arcticicestudio/nord-vim) 
+
+**Notepadqq**   
+The theme has not been updated with current colors, since I'm using neovim now.
+
+**Discord**   
+Using [discocss](https://github.com/mlvzk/discocss) to inject a theme.
 
 Icons  
 -----
