@@ -41,6 +41,8 @@ Plug 'plasticboy/vim-markdown'
 
 " Obli Vim
 Plug 'katawful/Obli-Vim', {'for': 'obse'}
+" Add if you want OBSE docs integrated into your Vim session
+Plug 'katawful/Obli-Vim-Docs', {'for': 'obse'}
 
 " Another try at getting color in here
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
@@ -96,4 +98,4 @@ let g:ov_disable_cse = 1
 " Make it so there is only autocomplete when i press the key
 let g:vsc_type_complete_length = 500
 
-
+set conceallevel=0

@@ -324,12 +324,6 @@ if [[ $backupType == "full" ]]; then
     dir=~/.local/share/onboard
     files="*"
     findFiles "$dir" "$files"
- 
-    echo -e "\n${blue}Reshade shaders${none}"
-
-    dir=~/.local/share/reshade
-    files="*"
-    findFiles "$dir" "$files"
 
 fi
 

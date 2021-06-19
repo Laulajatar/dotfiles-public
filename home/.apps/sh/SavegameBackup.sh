@@ -30,23 +30,6 @@ findFiles() {
     }
 
 
-fbacks() {
-    find "$1" -type f -name "$2" -exec sh -c '\
-        file=$(readlink -f "{}") \
-        && if [[ $file != *"Session.vim" ]]; then dest='"$backupPath"'/'"$pathAdd"'${file#*$HOME} \
-        && if [[ -f "$dest" ]]; then if [[ $file -nt $dest ]]; \
-        then echo -e "\033[0;33mChanged file:\033[0m $file \033[0;33m->\033[0m $dest" ; fi; \
-        else echo -e "\033[0;33mNew file:\033[0m $file \033[0;33m->\033[0m $dest"; fi \
-        && temp=$(dirname "$dest") \
-        && mkdir -p "$temp" \
-        && cp -u "$file" "$dest"; fi' \
-        \;
-    dest='"$backupPath"'/'"$pathAdd"'
-    mkdir -p "$dest"
-    cp -r -u "$dir" "$pathAdd"
-    }
-
-
 # Rest goes here
 
 # Setting up stuff {{{
@@ -104,6 +87,13 @@ echo -e "\n${blue}Stardew Valley${none}"
 
 pathAdd="StardewValley"
 dir=~/.config/StardewValley/Saves
+files="*"
+findFiles "$dir" "$files"
+
+echo -e "\n${blue}Starbound${none}"
+
+pathAdd="Starbound"
+dir=/mnt/Games/SteamLibrary/steamapps/common/Starbound/storage
 files="*"
 findFiles "$dir" "$files"
 

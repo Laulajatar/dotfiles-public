@@ -20,6 +20,8 @@ case "$NAME" in
     "Tell Me Why"*) PREFIX="TellMeWhy" ;;
     *"Valheim"*) PREFIX="Valheim" ;;
     *"DRAGON QUEST"*) PREFIX="DragonQuest" ;;
+    "Starbound") PREFIX="Starbound" ;;
+
 esac
 
 if [[ $PREFIX == "Screenshot" ]]; then

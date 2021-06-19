@@ -136,7 +136,7 @@ type = custom/text
 content-background = ${colors.shade1}
 content-foreground =  ${colors.foreground}
 content = "%{T1}ﭮ%{T-}  "
-click-left = discocss &
+click-left = /home/laula/.apps/sh/discocss/discocss &
 click-right = /usr/bin/discover-overlay &
 click-middle = /usr/bin/discover-overlay --close &
 
@@ -231,7 +231,10 @@ label = %date% %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+;; find sink with pactl list sinks
+;; sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+;; Starship Matisse
+sink = alsa_output.pci-0000_2d_00.4.analog-stereo
 
 format-volume-background = ${colors.shade1}
 label-muted-background = ${colors.shade1}

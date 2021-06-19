@@ -68,7 +68,7 @@
         <value type="double" value="0.321569"/>
         <value type="double" value="1.000000"/>
       </property>
-      <property name="length" type="uint" value="7"/>
+      <property name="length" type="uint" value="9"/>
       <property name="length-adjust" type="bool" value="false"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="7"/>
@@ -128,6 +128,100 @@
         <value type="string" value="clipman"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-1980"/>
+        <value type="string" value="dropbox-client-1954"/>
+        <value type="string" value="dropbox-client-1966"/>
+        <value type="string" value="dropbox-client-2015"/>
+        <value type="string" value="dropbox-client-1970"/>
+        <value type="string" value="dropbox-client-1983"/>
+        <value type="string" value="dropbox-client-1961"/>
+        <value type="string" value="dropbox-client-1960"/>
+        <value type="string" value="dropbox-client-1972"/>
+        <value type="string" value="dropbox-client-1962"/>
+        <value type="string" value="dropbox-client-78146"/>
+        <value type="string" value="dropbox-client-1482"/>
+        <value type="string" value="dropbox-client-1399"/>
+        <value type="string" value="dropbox-client-1419"/>
+        <value type="string" value="dropbox-client-1401"/>
+        <value type="string" value="dropbox-client-1393"/>
+        <value type="string" value="dropbox-client-1395"/>
+        <value type="string" value="dropbox-client-1394"/>
+        <value type="string" value="dropbox-client-1397"/>
+        <value type="string" value="dropbox-client-1409"/>
+        <value type="string" value="dropbox-client-2010"/>
+        <value type="string" value="dropbox-client-1940"/>
+        <value type="string" value="dropbox-client-1944"/>
+        <value type="string" value="AppRun.wrapped"/>
+        <value type="string" value="dropbox-client-1958"/>
+        <value type="string" value="dropbox-client-1924"/>
+        <value type="string" value="dropbox-client-3882"/>
+        <value type="string" value="dropbox-client-1946"/>
+        <value type="string" value="dropbox-client-13653"/>
+        <value type="string" value="dropbox-client-1937"/>
+        <value type="string" value="dropbox-client-74770"/>
+        <value type="string" value="dropbox-client-1400"/>
+        <value type="string" value="dropbox-client-3800"/>
+        <value type="string" value="dropbox-client-2394"/>
+        <value type="string" value="dropbox-client-1974"/>
+        <value type="string" value="dropbox-client-4100"/>
+        <value type="string" value="dropbox-client-1949"/>
+        <value type="string" value="dropbox-client-2031"/>
+        <value type="string" value="dropbox-client-2038"/>
+        <value type="string" value="dropbox-client-2086"/>
+        <value type="string" value="dropbox-client-2035"/>
+        <value type="string" value="dropbox-client-2021"/>
+        <value type="string" value="dropbox-client-412693"/>
+        <value type="string" value="dropbox-client-1405"/>
+        <value type="string" value="dropbox-client-1413"/>
+        <value type="string" value="dropbox-client-1408"/>
+        <value type="string" value="dropbox-client-1415"/>
+        <value type="string" value="dropbox-client-1414"/>
+        <value type="string" value="dropbox-client-11428"/>
+        <value type="string" value="dropbox-client-2044"/>
+        <value type="string" value="dropbox-client-2089"/>
+        <value type="string" value="dropbox-client-2030"/>
+        <value type="string" value="dropbox-client-2027"/>
+        <value type="string" value="dropbox-client-14506"/>
+        <value type="string" value="dropbox-client-2053"/>
+        <value type="string" value="dropbox-client-2041"/>
+        <value type="string" value="dropbox-client-148055"/>
+        <value type="string" value="dropbox-client-1411"/>
+        <value type="string" value="dropbox-client-1406"/>
+        <value type="string" value="dropbox-client-1416"/>
+        <value type="string" value="dropbox-client-558100"/>
+        <value type="string" value="dropbox-client-1418"/>
+        <value type="string" value="dropbox-client-1412"/>
+        <value type="string" value="dropbox-client-1447"/>
+        <value type="string" value="dropbox-client-1473"/>
+        <value type="string" value="dropbox-client-1458"/>
+        <value type="string" value="dropbox-client-1448"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="dropbox-client-108490"/>
+        <value type="string" value="dropbox-client-1943"/>
+        <value type="string" value="dropbox-client-1918"/>
+        <value type="string" value="dropbox-client-305410"/>
+        <value type="string" value="dropbox-client-2193"/>
+        <value type="string" value="dropbox-client-1926"/>
+        <value type="string" value="dropbox-client-2126"/>
+        <value type="string" value="dropbox-client-1955"/>
+        <value type="string" value="dropbox-client-4061"/>
+        <value type="string" value="dropbox-client-1933"/>
+        <value type="string" value="dropbox-client-1931"/>
+        <value type="string" value="dropbox-client-1911"/>
+        <value type="string" value="dropbox-client-2005"/>
+        <value type="string" value="dropbox-client-2183"/>
+        <value type="string" value="dropbox-client-173805"/>
+        <value type="string" value="dropbox-client-2175"/>
+        <value type="string" value="dropbox-client-2172"/>
+        <value type="string" value="dropbox-client-2102"/>
+        <value type="string" value="dropbox-client-2058"/>
+        <value type="string" value="dropbox-client-2110"/>
+        <value type="string" value="dropbox-client-2076"/>
+        <value type="string" value="dropbox-client-2046"/>
+        <value type="string" value="dropbox-client-14812"/>
+        <value type="string" value="dropbox-client-2075"/>
+        <value type="string" value="dropbox-client-2305"/>
+        <value type="string" value="dropbox-client-2188"/>
         <value type="string" value="dropbox-client-2288"/>
         <value type="string" value="dropbox-client-2338"/>
         <value type="string" value="dropbox-client-2108"/>

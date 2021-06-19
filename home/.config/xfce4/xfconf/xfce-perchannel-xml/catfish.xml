@@ -4,9 +4,9 @@
   <property name="show-hidden-files" type="bool" value="false"/>
   <property name="show-sidebar" type="bool" value="false"/>
   <property name="close-after-select" type="bool" value="false"/>
-  <property name="window-width" type="int" value="940"/>
-  <property name="window-height" type="int" value="467"/>
-  <property name="window-x" type="int" value="0"/>
-  <property name="window-y" type="int" value="25"/>
+  <property name="window-width" type="int" value="1242"/>
+  <property name="window-height" type="int" value="639"/>
+  <property name="window-x" type="int" value="608"/>
+  <property name="window-y" type="int" value="258"/>
   <property name="exclude-paths" type="string" value="/dev;~/.cache;~/.gvfs;"/>
 </channel>

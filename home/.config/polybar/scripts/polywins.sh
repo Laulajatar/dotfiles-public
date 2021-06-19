@@ -275,6 +275,10 @@ generate_window_list() {
             "steam_app_1295510" ) w_name="dragon quest xi" ;;
             "eocapp" ) w_name="divinity: original sin" ;;
             "xfce4-terminal" ) w_name="music" ;;
+            "github.alcaro.flips.com.github.alcaro.flips" ) w_name="flips" ;;
+            "steam_app_529660" ) w_name="mages of mystralia" ;;
+            "ui.exe.mgexegui.exe" ) w_name="mge xe" ;;
+            "x86.aer.x86" ) w_name="aer: memories of old" ;;
         esac
 
 		# Truncate displayed name to user-selected limit

@@ -40,8 +40,6 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Super&gt;F12" type="string" value="mpc next --port 6601"/>
-      <property name="&lt;Super&gt;F11" type="string" value="mpc prev --port 6601"/>
       <property name="Menu" type="string" value="xfce4-appfinder">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
@@ -99,6 +97,25 @@
       <property name="&lt;Super&gt;Pause" type="string" value="mpc --port 6601 volume +5">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
+      <property name="s" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="e" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Super&gt;F12" type="string" value="mpc next --port 6601">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Super&gt;F11" type="string" value="mpc prev --port 6601">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Super&gt;v" type="string" value="sh -c &quot;/home/laula/.apps/sh/ScreenshotMode.sh&quot;">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Super&gt;F8" type="string" value="sh -c &quot;/home/laula/.apps/sh/windowTitle.sh&quot;">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Super&gt;KP_Decimal" type="string" value="sh -c &quot;/home/laula/.apps/sh/movescreen.py next&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

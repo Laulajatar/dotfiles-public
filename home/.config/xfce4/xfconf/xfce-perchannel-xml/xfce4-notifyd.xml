@@ -8,10 +8,13 @@
   <property name="theme" type="string" value="Default"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="balena-etcher-electron"/>
+      <value type="string" value="blueman"/>
       <value type="string" value="calibre-gui"/>
       <value type="string" value="com.uploadedlobster.peek"/>
       <value type="string" value="discord"/>
       <value type="string" value="Dropbox"/>
+      <value type="string" value="Electron"/>
       <value type="string" value="FileZilla"/>
       <value type="string" value="Firefox"/>
       <value type="string" value="MSM Notifier"/>

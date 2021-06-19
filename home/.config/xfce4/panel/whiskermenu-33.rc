@@ -1,5 +1,5 @@
-favorites=org.manjaro.pamac.manager.desktop,xfce-ui-settings.desktop,xfce-wm-settings.desktop,xfce-keyboard-settings.desktop,org.kde.kdenlive.desktop,virtualbox.desktop
-recent=xfce-keyboard-settings.desktop,xfce4-appfinder.desktop,org.gnome.DiskUtility.desktop,teams.desktop,xfce4-terminal.desktop,kitty.desktop,xfce-settings-manager.desktop,thunar-settings.desktop,xfce-ui-settings.desktop,steam.desktop
+favorites=org.manjaro.pamac.manager.desktop,xfce-ui-settings.desktop,xfce-wm-settings.desktop,xfce-keyboard-settings.desktop,virtualbox.desktop
+recent=kitty.desktop,xfce4-terminal.desktop,org.gnome.Terminal.desktop,xfce4-terminal-emulator.desktop,org.onlyoffice.desktopeditors.desktop,com.uploadedlobster.peek.desktop,xfce-keyboard-settings.desktop,xfce4-appfinder.desktop,org.gnome.DiskUtility.desktop
 button-icon=xfce4-whiskermenu
 button-single-row=false
 show-button-title=false
