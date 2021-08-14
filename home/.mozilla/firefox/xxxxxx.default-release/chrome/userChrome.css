@@ -1,0 +1,126 @@
+/*** Proton Tabs Tweaks ***/
+/* Adjust tab corner shape, optionally remove space below tabs */
+
+#tabbrowser-tabs {
+    --user-tab-rounding: 0px;
+}
+
+.tab-background {
+    border-radius: var(--user-tab-rounding) var(--user-tab-rounding) 0px 0px !important;
+    margin-block: 1px 0 !important;
+    box-shadow: none !important;
+}
+#scrollbutton-up, #scrollbutton-down { /* 6/10/2021 */
+    border-top-width: 1px !important;
+    border-bottom-width: 0 !important;
+}
+/* Container color bar visibility */
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+    margin: 0px max(calc(var(--user-tab-rounding) - 3px), 0px) !important;
+}
+
+/* Override Normal Density height to Compact Density height only for tabs */
+
+#TabsToolbar, #tabbrowser-tabs {
+    --tab-min-height: 29px !important;
+}
+    /* Tweak for covering a line at the bottom of the active tab on some themes 8/11/2021 */
+#main-window[sizemode="normal"] #toolbar-menubar[autohide="true"] + #TabsToolbar, 
+#main-window[sizemode="normal"] #toolbar-menubar[autohide="true"] + #TabsToolbar #tabbrowser-tabs {
+    --tab-min-height: 30px !important;
+}
+#scrollbutton-up,
+#scrollbutton-down {
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
+}
+
+    /* [Connected Tabs] Set a max height based on min-height plus margin-block: 1px 0 */
+#TabsToolbar, #TabsToolbar > hbox, #TabsToolbar-customization-target, #tabbrowser-arrowscrollbox  {
+    max-height: calc(var(--tab-min-height) + 1px) !important;
+}
+    /* [Connected Tabs] Adjust padding around icons on buttons to avoid crushed images */
+#TabsToolbar-customization-target toolbarbutton > .toolbarbutton-icon, 
+#TabsToolbar-customization-target .toolbarbutton-text, 
+#TabsToolbar-customization-target .toolbarbutton-badge-stack,
+#scrollbutton-up,#scrollbutton-down {
+    padding-top: 7px !important;
+    padding-bottom: 6px !important;
+}
+
+/* Inactive tabs: Separator line style */
+
+.tab-background[selected]{
+  border-left: 1px solid rgba(0, 0, 0, .40) !important;
+  border-right: 1px solid rgba(0, 0, 0, .40) !important;
+  border-top: 1px solid rgba(0, 0, 0, .40) !important;
+}
+
+.tabbrowser-tab:not([selected=true]):not([multiselected=true]):not([beforeselected-visible="true"]) .tab-background {
+    border-right: 1px solid var(--lwt-background-tab-separator-color, rgba(0, 0, 0, .20)) !important;
+}
+/* For dark backgrounds */
+[brighttext="true"] .tabbrowser-tab:not([selected=true]):not([multiselected=true]):not([beforeselected-visible="true"]) .tab-background {
+    border-right: 1px solid var(--lwt-background-tab-separator-color, var(--lwt-selected-tab-background-color, rgba(255, 255, 255, .20))) !important;
+}
+.tabbrowser-tab:not([selected=true]):not([multiselected=true]) .tab-background {
+    border-radius: 0 !important;
+}
+/* Remove padding between tabs */
+.tabbrowser-tab {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Tweak Options as of 8/11/2021; Generated Thu Aug 12 2021 09:31:25 GMT+0200 (Mitteleuropäische Sommerzeit) */
+
+/*** Tighten up drop-down/context/popup menu spacing ***/
+
+menupopup > menuitem, menupopup > menu {
+  padding-block: 4px !important;
+}
+:root {
+  --arrowpanel-menuitem-padding: 4px 8px !important;
+}
+
+/* Url bar has a border even in a fresh tab without hover */
+#urlbar-background,
+#searchbar {
+  border: 1px solid var(--chrome-content-separator-color) !important;
+}
+
+/* Use Normal top and bottom padding for compact */
+#PlacesToolbarItems .bookmark-item {
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+}
+
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/inline_tab_audio_icons.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
+/* Shows tab audio icons next to the tab icon, and by default removes the tab secondary line */
+
+.tabbrowser-tab:not([pinned]) .tab-icon-stack:is([muted],[soundplaying],[activemedia-blocked]){
+  grid-template-areas: "a s";
+}
+.tabbrowser-tab:not([pinned]) .tab-icon-overlay:is([muted],[soundplaying],[activemedia-blocked]){ grid-area: s; }
+.tab-icon-overlay,.tab-icon-image{ opacity: 1 !important; }
+
+/* secondary audio label ain't much use with this style, but feel free to remove the next line if you want to show it. */
+.tab-secondary-label{ display: none }
+
+/* show the secondary label when video is in PiP */
+.tab-secondary-label[pictureinpicture]{ display: -moz-box }
+
+
+/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/tab_close_button_always_on_hover.css made available under Mozilla Public License v. 2.0
+See the above repository for updates as well as full license text. */
+
+/* Always show tab close button on hover and never otherwise */
+.tabbrowser-tab:not([pinned]) .tab-close-button{
+  display:-moz-box !important;
+}
+.tabbrowser-tab:not([pinned]):hover .tab-close-button{
+  display:-moz-box !important;
+}

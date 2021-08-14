@@ -2,6 +2,9 @@ Wheatfield
 ======
 
 ![Desktop](ScreenshotMain.png)
+![Desktop](ScreenshotMix.png)
+![Desktop](ScreenshotEmu.png)
+![Desktop](ScreenshotCS.png)
   
 Themes
 ------
@@ -21,6 +24,9 @@ Yes, I should have built it from scratch instead of editing the css, I know that
 
 Getting rid of GTK 3 CSD with    
 [gtk-nocsd Github](https://github.com/ZaWertun/gtk3-nocsd)  
+**Applications that need workarounds**:    
+pamac-manager needs `env GTK3NOCSD_SHOW_HEADER=1`   
+gnome-disks needs `env GTK_CSD=1` reenabling the CSD or the buttons when creating a partition won't show.   
 
 **QT Theme**    
 I murdered the Arc Dark theme that came with the Kvantum theme engine. Only slightly less gruesome than the GTK3 murder.
@@ -30,10 +36,20 @@ Edited the nord theme with my own colors since I am too lazy to figure out how t
 [Nord-vim theme Github](https://github.com/arcticicestudio/nord-vim) 
 
 **Notepadqq**   
-The theme has not been updated with current colors, since I'm using neovim now.
+The theme has not been updated, since I'm using neovim now.
+The colors probably look crap on anything that isn't tes4 code.
 
 **Discord**   
 Using [discocss](https://github.com/mlvzk/discocss) to inject a theme.
+
+**Firefox**    
+Some additional about:config changes    
+`toolkit.legacyUserProfileCustomizations.stylesheets` true    
+`browser.tabs.tabMinWidth` 120   
+`mousewheel.min_line_scroll_amount` 25 (yea, yea, this has nothing to do with looks)   
+`browser.compactmode.show` true (does this even still do anything??)  
+`full-screen-api.ignore-widgets` true   
+
 
 Icons  
 -----
