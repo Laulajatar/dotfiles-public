@@ -99,6 +99,8 @@
     # battery               # internal battery
     # wifi                  # wifi speed
     # example               # example user-defined segment (see prompt_example function below)
+    my_wineprefix           # Oh boy
+
   )
 
   # Defines character set used by powerlevel10k. It's best to let `p10k configure` set it for you.
@@ -1466,7 +1468,7 @@
   #
   #   Parameter             | Meaning
   #   ----------------------+---------------
-  #   P9K_WIFI_SSID         | service set identifier, a.k.a. network name
+    #   P9K_WIFI_SSID         | service set identifier, a.k.a. network name
   #   P9K_WIFI_LINK_AUTH    | authentication protocol such as "wpa2-psk" or "none"; empty if unknown
   #   P9K_WIFI_LAST_TX_RATE | wireless transmit rate in megabits per second
   #   P9K_WIFI_RSSI         | signal strength in dBm, from -120 to 0
@@ -1495,6 +1497,18 @@
   function prompt_example() {
     p10k segment -f 2 -i '⭐' -t 'hello, %n'
   }
+
+  function prompt_my_wineprefix() {
+    prefix=$WINEPREFIX
+    toolong="/home/laula"
+    shorten="~"
+    if [ -z "$prefix" ] ; then
+      return
+    fi
+    prefix="${prefix/$toolong/$shorten}"
+    p10k segment -i '' -f magenta -t "$prefix"
+  }
+
 
   # User-defined prompt segments may optionally provide an instant_prompt_* function. Its job
   # is to generate the prompt segment for display in instant prompt. See

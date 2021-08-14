@@ -2,7 +2,7 @@
 noremap <C-t> :NERDTreeToggle<CR>
 
 " Switch buffer
-nnoremap S :SwitchBuffer <CR>
+nnoremap S :SwitchBuffer<CR>
 " What's this even for?
 " set switchbuf=usetab
 
@@ -38,8 +38,18 @@ nnoremap x "_x
 nnoremap <F5> :%y<CR>
 nnoremap <F8> gg"_dGP
 
+" Let's also just add a delete all without pasting
+nnoremap <F7> gg"_dG
+
+" Toggle goyo
+nnoremap <F4> :Goyo<CR>
+
 " I fucking give up, let me save already 
 cnoremap W w
 
-" Pls
+" Pls just close
 cnoremap Q qall
+
+" Delete things in parentheses or brackets
+onoremap b i[| 
+onoremap p i(|

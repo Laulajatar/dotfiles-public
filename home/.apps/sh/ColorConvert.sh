@@ -11,7 +11,7 @@ blue=$4
 function main {
 
     if [[ "$#" -ne 4 ]]; then
-        >&2 echo "Not enough parameters, exiting, number of parameters: $#"
+        >&2 echo "Not enough parameters, exiting. Expecting rgb/gbc and 4 numbers."
         exit 2
     fi
 

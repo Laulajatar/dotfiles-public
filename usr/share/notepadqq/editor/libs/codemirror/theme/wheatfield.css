@@ -6,54 +6,53 @@
 
 */
 
-.cm-s-wheatfield.CodeMirror { background: #232731; color: #ffffff; } /* 2f343f 21242c */
+.cm-s-wheatfield.CodeMirror { background: #232731; color: #ffffff; }
 .cm-s-wheatfield div.CodeMirror-selected { background: #636c83; }
 
 .cm-s-wheatfield .CodeMirror-line::selection, .cm-s-wheatfield .CodeMirror-line > span::selection, .cm-s-wheatfield .CodeMirror-line > span > span::selection { background: #353b48; }
 .cm-s-wheatfield .CodeMirror-line::-moz-selection, .cm-s-wheatfield .CodeMirror-line > span::-moz-selection, .cm-s-wheatfield .CodeMirror-line > span > span::-moz-selection { background: #353B48; }
 
-.cm-s-wheatfield .CodeMirror-gutters { background: #2F343F ; border-right: 1px solid #ffffff; } /* 1A1D23 */
+.cm-s-wheatfield .CodeMirror-gutters { background: #2F343F ; border-right: 1px solid #ffffff; } 
 .cm-s-wheatfield .CodeMirror-guttermarker { color: #555; }
 .cm-s-wheatfield .CodeMirror-linenumber { color: #939393; }
 .cm-s-wheatfield .CodeMirror-cursor { border-left: 1px solid #fff; }
 
-.cm-s-wheatfield span.cm-comment { color: #4C566A; } /* Grey b1b1b3 */
-.cm-s-wheatfield span.cm-qualifier { color: #cccccc; } /* Grey */ 
-.cm-s-wheatfield span.cm-string { color: #c5c9d3; } /* Almost white */
-.cm-s-wheatfield span.cm-meta { color: #939393; } /* Grey */
+.cm-s-wheatfield span.cm-comment { color: #4b5368; } 
+.cm-s-wheatfield span.cm-qualifier { color: #cccccc; } 
+.cm-s-wheatfield span.cm-string { color: #c5c9d3; } 
+.cm-s-wheatfield span.cm-meta { color: #939393; } 
 .cm-s-wheatfield span.cm-hr { color: #939393; }
 
 
 
-.cm-s-wheatfield span.cm-quote { color: #E7CC93; } /* Yellow */
-.cm-s-wheatfield span.cm-attribute { color: #FBEED0; }
-.cm-s-wheatfield span.cm-keyword { color: #FBEED0; }
-.cm-s-wheatfield span.cm-error { color: #E7CC93; }
-.cm-s-wheatfield span.cm-quote {color: #FBEED0;}
-.cm-s-wheatfield span.cm-variable { color: #F8E4B4; } /* Yellow / Gold */
+.cm-s-wheatfield span.cm-quote { color: #E7CC93; } 
+.cm-s-wheatfield span.cm-attribute { color: #f6dea2; }
+.cm-s-wheatfield span.cm-keyword { color: #f6dea2; }
+.cm-s-wheatfield span.cm-error { color: #f3ca8a; }
+.cm-s-wheatfield span.cm-quote {color: #f6dea2;}
+.cm-s-wheatfield span.cm-variable { color: #F8E4B4; } 
 
+.cm-s-wheatfield span.cm-builtin { color: #f4d48b; } 
+.cm-s-wheatfield span.cm-property { color: #99bfcc; } 
+.cm-s-wheatfield span.cm-number { color: #c5a8a0; } 
+.cm-s-wheatfield span.cm-atom { color: #a5c8d4; } 
 
-.cm-s-wheatfield span.cm-builtin { color: #808cb3; } /* Purplish Blue for Functions */
-.cm-s-wheatfield span.cm-property { color: #808cb3; } /* C0AC9E Red */
-.cm-s-wheatfield span.cm-number { color: #a5c8d4; } /* Green for Numbers #9db4a3 */
-.cm-s-wheatfield span.cm-atom { color: #a5c8d4; } /* This is stuff in css like hex numbers of colors */
-
-.cm-s-wheatfield span.cm-string-2 { color: #5382ac; }
-.cm-s-wheatfield span.cm-header { color: #9DA3B3; } /* 848CA4 Steel Blue */
-.cm-s-wheatfield span.cm-operator { color: #9DA3B3; } 
-.cm-s-wheatfield span.cm-variable-2 { color: #9DA3B3; } 
-.cm-s-wheatfield span.cm-def { color: #9DA3B3; } 
+.cm-s-wheatfield span.cm-string-2 { color: #99b3cc; }
+.cm-s-wheatfield span.cm-header { color: #99bfcc; } 
+.cm-s-wheatfield span.cm-operator { color: #99bfcc; font-weight:bold} 
+.cm-s-wheatfield span.cm-variable-2 { color: #99bfcc; } 
+.cm-s-wheatfield span.cm-def { color: #99bfcc; } 
 .cm-s-wheatfield span.cm-bracket { color: #8494A2; }
-.cm-s-wheatfield span.cm-tag { color: #9DA3B3; }
-.cm-s-wheatfield span.cm-link:visited { color: #9DA3B3; }
+.cm-s-wheatfield span.cm-tag { color: #99bfcc; }
+.cm-s-wheatfield span.cm-link:visited { color: #99bfcc; }
 
-.cm-s-wheatfield span.cm-variable-3 { color: #d7d7db; } /* Light Grey */
-.cm-s-wheatfield span.cm-link { color: #737373; } /* Dark Grey */
+.cm-s-wheatfield span.cm-variable-3 { color: #d7d7db; } 
+.cm-s-wheatfield span.cm-link { color: #737373; } 
 .cm-s-wheatfield span.cm-special { color: #d7d7db; }
 
 .cm-s-wheatfield .CodeMirror-activeline-background { background: #424857; }
 .cm-s-wheatfield .CodeMirror-matchingbracket { outline: solid 1px rgba(255, 255, 255, .25); color: white !important; }
 
-.cm-s-wheatfield .CodeMirror-matchingtag { background: #ff0000; }
+.cm-s-wheatfield .CodeMirror-matchingtag { background: #f4d48b; }
 .cm-s-wheatfield span.cm-positive {color: #ffffff;}
-.cm-s-wheatfield span.cm-fat-cursor-mark { background-color: #00ff00; }
+.cm-s-wheatfield span.cm-fat-cursor-mark { background-color: #f4d48b; }

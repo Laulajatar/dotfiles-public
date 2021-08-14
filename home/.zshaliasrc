@@ -9,9 +9,9 @@ alias music='ncmpcpp'
 alias vim='nvim'
 
 # alias calcurse commands to load different calendars
-alias calendar='calcurse -D ~/Dropbox/Calendar/default'
-alias period='calcurse -D ~/Dropbox/Calendar/period'
-alias birthdays='calcurse -D ~/Dropbox/Calendar/birthdays'
+alias calendar='calcurse -D $HOME/Dropbox/Calendar/default'
+alias period='calcurse -D $HOME/Dropbox/Calendar/period'
+alias birthdays='calcurse -D $HOME/Dropbox/Calendar/birthdays'
 
 # Color things
 alias fixColorTemp='redshift -O -P 6500'
@@ -19,11 +19,11 @@ alias colorExample='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)
 
 # Add alternate case to a string. Read doesn't work in alias and I am too hungry to investigate.
 # alias sarcasm='read -p "Enter string: " stringToChange ; echo ; echo "$stringToChange" | sed -r "s/([a-z])([^a-z]*.?)/\u\1\l\2/gi"'
-alias sarcasm='sh -c "/home/laula/.apps/sh/caseAlternate.sh"'
+alias sarcasm='sh -c "$HOME/.apps/sh/caseAlternate.sh"'
 
 # Alias cadmus because apparently I'll be using it a lot
 # Let's try to restart polybar after or the volume changer crashes it
-alias cadmus='sh -c "/home/laula/.apps/sh/cadmus.sh"'
+alias cadmus='sh -c "$HOME/.apps/sh/cadmus.sh"'
 
 # Programs with many arguments made short because tiny brain
 
@@ -32,15 +32,15 @@ alias grabTube='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 
 # Check which video formats are available on twitch
 alias checkTwitch='youtube-dl -F'
 # Download video from twitch so you can blame rey for making bad jokes 2 years from now (don't forget to actually add format) and also remove all those emojis from file names
-alias grabTwitch='youtube-dl --restrict-filenames -f'
+alias grabTwitch='youtube-dl --restrict-filenames'
 
 # Restart polybar (was that comment really necessary)
 alias polybarRestart='polybar-msg cmd restart'
 
 # Take a screenshot of the left screen
-alias oneScreenShot='xmacroplay < /home/laula/.apps/macros/OneScreenShot'
+alias oneScreenShot='xmacroplay < $HOME/.apps/macros/OneScreenShot'
 # Take a screenshot of the other left 
-alias otherScreenShot='xmacroplay < /home/laula/.apps/macros/OtherScreenShot'
+alias otherScreenShot='xmacroplay < $HOME/.apps/macros/OtherScreenShot'
 
 # Create a separate sink for game audio when recording
 alias createRecordingSink='pactl load-module module-virtual-sink sink_name=GameSounds master=alsa_output.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.analog-stereo'
@@ -50,7 +50,14 @@ alias removeRecordingSink='echo "Do pactl list modules, then pactl unload-module
 # Some commands I might wanna look up all the time because tiny brain
 alias sendHelpPlz='clear; echo -e "\033[1;35mHelp has arrived:\033[0m\n\n\033[1;33mMake executable:\033[0m sudo chmod +x filename\n\n\033[1;33mAppend images:\033[0m\nconvert img1 img2 (*.png) -append result.png\nmontage *.png -geometry 480x270\>+2+2 -tile 3x3 -background \"#cccccc\" test.jpg\n\n\033[1;33mGet window properties:\033[0m xprop | grep WM_CLASS\(STRING\) ~ WM_NAME\n\n\033[1;33mVirtualbox shared folder:\033[0m sudo usermod -a -G vboxsf $USER\n\n\033[1;33mAll to lower case:\033[0m perl-rename -v \"y/A-Z/a-z/\" *\n\n\033[1;33mSteam commands:\033[0m PROTON_USE_WINED3D=1 strangle 60 %command%\n\n\033[1;33mVim things:\033[0m :%(all)s/old/new/g(all)c(confirm) - ggyG - gg\"_dGp\n\n\033[1;33mAnd also:\033[0m 1084066- - fc-list - -U /var/cache/pacman/pgk/ -> /etc/pacman.conf\n\n\033[1;33mxdelta3:\033[0m xdelta3 -h | xdelta3.exe -d -s old_file delta_file decoded_new_file\n\n\033[1;33mStartup failed:\033[0m xfsettingsd --replace\n\n\n\033[1;35mThats all, good luck.\033[0m\n"'
 
-# Since Oblivion decided to be a bitch about Lutris now
-alias oblivion='WINEPREFIX=/home/laula/Games/oblivion wine /home/laula/Games/oblivion/drive_c/game/Mopy/Wrye\ Bash.exe'
-alias modding='WINEPREFIX=~/Games/oblivion-modding wine ~/Games/oblivion-modding/drive_c/Oblivion/Mopy/Wrye\ Bash.exe'
-alias bgb='wine ~/Romhacking/Emulators/BGB/bgb64.exe' 
+# Games
+alias oblivion='strangle 60 WINEPREFIX=$HOME/Games/oblivion-trash $HOME/Games/wine/compiled/wine-tkg-esync-git-6.4-wryebash/usr/bin/wine64 "$HOME/Games/oblivion-trash/drive_c/Oblivion/Mopy/Wrye Bash.exe" "-d"'
+alias modding='WINEPREFIX=$HOME/Games/oblivion-modding wine $HOME/Games/oblivion-modding/drive_c/Oblivion/Mopy/Wrye\ Bash.exe'
+alias bgb='wine $HOME/Romhacking/Emulators/BGB/bgb64.exe' 
+
+alias bgt='cd $HOME/Games/gemrb/build; ../admin/run.gdb GemRB.cfg' 
+alias bg1='cd $HOME/Games/gemrb/build; ../admin/run.gdb BG1.cfg' 
+alias bg2='cd $HOME/Games/gemrb/build; ../admin/run.gdb BG2.cfg' 
+
+# Come on mpd you little piece of shit
+alias FuckOff='sh -c "$HOME/.apps/sh/bye.sh"'

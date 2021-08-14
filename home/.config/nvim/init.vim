@@ -39,8 +39,10 @@ Plug 'Yggdroot/indentLine'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
-" Obli Vim
-Plug 'katawful/Obli-Vim', {'for': 'obse'}
+" Obse Syntax Highlighting
+Plug 'katawful/obse.vim'
+" Old one for syntax & cse integration
+" Plug 'katawful/Obli-Vim', {'for': 'obse'}
 " Add if you want OBSE docs integrated into your Vim session
 Plug 'katawful/Obli-Vim-Docs', {'for': 'obse'}
 
@@ -52,6 +54,9 @@ Plug 'maxboisvert/vim-simple-complete'
 "
 " Vimwiki
 Plug 'vimwiki/vimwiki'
+
+" Goyo (Distraction free writing)
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
@@ -93,7 +98,7 @@ source ~/.config/nvim/config/vimwiki.vim
 " Might.
 
 " disable CSE connection because I am a peasant with normal CS
-let g:ov_disable_cse = 1
+" let g:ov_disable_cse = 1
 
 " Make it so there is only autocomplete when i press the key
 let g:vsc_type_complete_length = 500

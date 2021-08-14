@@ -90,7 +90,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vi'
+   export EDITOR='nano'
  else
    export EDITOR='nvim'
  fi
@@ -149,7 +149,7 @@ n ()
 }
 
 # Bookmarks
-export NNN_BMS='d:~/Downloads;.:~/Dropbox/Linux/dotfiles/;a:~/Dropbox/Freigaben/Arbeit;w:~/.apps/sh;p:~/.config/polybar;n:~/Dropbox/Schreiben/New World;c:~/Romhacking/polishedcrystal;m:~/Games/my-oblivion-mods;y:~/Documents/Python/sololearn'
+export NNN_BMS='d:~/Downloads;.:~/Dropbox/Linux/dotfiles/;a:~/Dropbox/Freigaben/Arbeit;w:~/.apps/sh;p:~/.config/polybar;n:~/Dropbox/Schreiben/New World;c:~/Romhacking/polishedcrystal;m:~/Games/my-oblivion-mods;y:~/Dropbox/Learn/Python/;b:~/Games/gemrb/build'
 export NNN_COLORS="2222"                           # use a different color for each context
 export NNN_TRASH=1                                 # trash (needs trash-cli) instead of delete
 

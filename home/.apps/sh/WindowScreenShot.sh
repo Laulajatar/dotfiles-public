@@ -21,15 +21,16 @@ case "$NAME" in
     *"Valheim"*) PREFIX="Valheim" ;;
     *"DRAGON QUEST"*) PREFIX="DragonQuest" ;;
     "Starbound") PREFIX="Starbound" ;;
+    "A Short Hike") PREFIX="AShortHike" ;;
 
 esac
 
 if [[ $PREFIX == "Screenshot" ]]; then
     mkdir -p "/home/laula/Pictures/Screenshots/"
-    xfce4-screenshooter -w -s /home/laula/Pictures/Screenshots/"$PREFIX"_"$TIMESTAMP".png
+    xfce4-screenshooter -w --no-border -s /home/laula/Pictures/Screenshots/"$PREFIX"_"$TIMESTAMP".png
 else
     mkdir -p "/home/laula/Pictures/Screenshots/${PREFIX}/"
-    xfce4-screenshooter -w -s /home/laula/Pictures/Screenshots/"$PREFIX"/"$PREFIX"_"$TIMESTAMP".png
+    xfce4-screenshooter -w --no-border -s /home/laula/Pictures/Screenshots/"$PREFIX"/"$PREFIX"_"$TIMESTAMP".png
 fi
 
 mpg123 ~/.apps/sh/beep.mp3

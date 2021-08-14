@@ -12,6 +12,7 @@ let g:startify_bookmarks = [
   \ { 's': '~/.config/nvim/config/startify.vim'},
   \ { 'c': '~/.apps/sh/WindowScreenShot.sh'},
   \ { 't': '~/Dropbox/Freigaben/Arbeit/TES.md'},
+  \ { 'r': '~/Dropbox/Notepad/dummy.txt'},
     \ ]
 let g:startify_commands = [
   \ { 'a': 'source ~/Dropbox/Notepad/Session.vim' },

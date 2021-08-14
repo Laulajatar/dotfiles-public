@@ -25,3 +25,6 @@ let g:airline_right_alt_sep = ''
 let g:airline_section_z = airline#section#create(['☰ %l/%L  %c'])
 let g:airline_section_warning = airline#section#create(['%{ObsessionStatus('''', '''')} '])
 
+" Meh, doesn't work on new/unsaved files anyway
+" let g:airline#extensions#wordcount#filetypes = (['markdown', 'plaintex', 'tex', 'text', 'md', 'vimwiki'])
+"let g:airline#extensions#wordcount#filetypes = (['all'])

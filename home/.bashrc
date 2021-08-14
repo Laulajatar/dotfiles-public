@@ -142,6 +142,3 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-
-export GTK_CSD=0
-export LD_PRELOAD=/usr/lib/libgtk3-nocsd.so.0

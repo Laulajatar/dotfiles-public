@@ -279,6 +279,9 @@ generate_window_list() {
             "steam_app_529660" ) w_name="mages of mystralia" ;;
             "ui.exe.mgexegui.exe" ) w_name="mge xe" ;;
             "x86.aer.x86" ) w_name="aer: memories of old" ;;
+            "steam_app_585180" ) w_name="open sorcery" ;;
+            "steam_app_214170" ) w_name="divine divinity" ;;
+            "x86_64.ashorthike.x86_64" ) w_name="a short hike" ;;
         esac
 
 		# Truncate displayed name to user-selected limit

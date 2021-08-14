@@ -70,6 +70,19 @@ echo
 
 # Savegames {{{
 
+echo -e "\n${blue}Guild Wars - Templates${none}"
+
+pathAdd="GuildWarsTemplates"
+dir="/home/laula/Games/guild-wars/drive_c/users/laula/My Documents/Guild Wars/Templates/"
+files="*"
+findFiles "$dir" "$files"
+
+pathAdd="GuildWars2Templates"
+dir="/home/laula/Games/guild-wars-2/drive_c/Program Files/Guild Wars 2/addons/arcdps/arcdps.buildpad/"
+files="*"
+findFiles "$dir" "$files"
+
+
 echo -e "\n${blue}emulation${none}"
 
 pathAdd="EmulationGBA"
@@ -82,6 +95,11 @@ dir=~/.local/share/dolphin-emu/GC/
 files=""
 findFiles "$dir" "$files"
 
+pathAdd="Emulation3DS"
+dir="/home/laula/.local/share/citra-emu/sdmc/Nintendo 3DS/00000000000000000000000000000000/00000000000000000000000000000000/"
+files=""
+findFiles "$dir" "$files"
+
 
 echo -e "\n${blue}Stardew Valley${none}"
 
@@ -90,12 +108,14 @@ dir=~/.config/StardewValley/Saves
 files="*"
 findFiles "$dir" "$files"
 
+
 echo -e "\n${blue}Starbound${none}"
 
 pathAdd="Starbound"
 dir=/mnt/Games/SteamLibrary/steamapps/common/Starbound/storage
 files="*"
 findFiles "$dir" "$files"
+
 
 echo -e "\n${blue}Valheim${none}"
 
@@ -111,17 +131,23 @@ dir="/mnt/Games/SteamLibrary/steamapps/compatdata/1295510/pfx/drive_c/users/stea
 files="*"
 findFiles "$dir" "$files"
 
-echo -e "\n${blue}Guild Wars - Templates${none}"
 
-pathAdd="GuildWarsTemplates"
-dir="/home/laula/Games/guild-wars/drive_c/users/laula/My Documents/Guild Wars/Templates/"
+echo -e "\n${blue}Divine Divinity${none}"
+
+pathAdd="DivineDivinity"
+dir="/home/laula/.steam/steam/steamapps/common/divine_divinity/savegames/"
 files="*"
 findFiles "$dir" "$files"
 
-pathAdd="GuildWars2Templates"
-dir="/home/laula/Games/guild-wars-2/drive_c/Program Files/Guild Wars 2/addons/arcdps/arcdps.buildpad/"
+
+echo -e "\n${blue}Baldur's Gate${none}"
+
+pathAdd="BaldursGateTrilogy"
+dir="/home/laula/Games/baldurs-gate-trilogy/Baldur's Gate Trilogy/save/"
 files="*"
 findFiles "$dir" "$files"
+
+
 
 # }}}
 

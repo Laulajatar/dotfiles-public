@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Nifskope
+MimeType=
+Exec=env WINEPREFIX="/home/laula/.wine" wine /home/laula/Games/wine/nifskope/NifSkope.exe %f
+NoDisplay=true
+StartupNotify=true
+Icon=webtorrent
