@@ -1,9 +1,9 @@
 app=gpicview
 last_user=
-screenshot_dir=file:///home/laula/Pictures/Screenshots/Oblivion/Oblivion_2021-06-19_22-46-23.png
-action=2
-delay=2
-region=2
+screenshot_dir=file:///home/laula/Pictures/Screenshots/GuildWars2/GuildWars2_2021-08-14_21-20-40.png
+action=1
+delay=0
+region=1
 show_mouse=0
 last_extension=png
 enable_imgur_upload=true
