@@ -53,3 +53,6 @@ cnoremap Q qall
 " Delete things in parentheses or brackets
 onoremap b i[| 
 onoremap p i(|
+
+" Let's see if we can fuel my bad habit of paste-replace in visual mode
+vnoremap p "_xP
