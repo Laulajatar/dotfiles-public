@@ -1499,12 +1499,13 @@
   }
 
   function prompt_my_wineprefix() {
-    prefix=$WINEPREFIX
-    toolong="/home/laula"
+    prefix=$(printenv WINEPREFIX)
+    toolong="/home/$USER"
     shorten="~"
     if [ -z "$prefix" ] ; then
       return
     fi
+    prefix="${prefix/$find1/$replace1}"
     prefix="${prefix/$toolong/$shorten}"
     p10k segment -i '' -f magenta -t "$prefix"
   }
