@@ -19,7 +19,7 @@ let g:startify_commands = [
   \ { 'n': 'source ~/.config/nvim/colors/wheat/colors/Session.vim' },
   \ { 'p': 'source ~/.config/polybar/Session.vim' },
   \ { 'o': 'source ~/Documents/ObseScript/Session.vim'},
-  \ { 'v': 'VimwikiIndex' },
+  \ { 'w': 'VimwikiIndex' },
   \ ]
 let g:startify_padding_left = 8
 let g:startify_custom_header = [

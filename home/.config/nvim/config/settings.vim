@@ -50,3 +50,10 @@ set mouse=a
 
 " File ignore case
 set fic
+
+" Highlight the currently active line
+set cursorline
+
+" Ask if you really want to quit etc
+set confirm
+

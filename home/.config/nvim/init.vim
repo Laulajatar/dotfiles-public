@@ -58,6 +58,9 @@ Plug 'vimwiki/vimwiki'
 " Goyo (Distraction free writing)
 Plug 'junegunn/goyo.vim'
 
+" vim-surround
+" Plug 'tpope/vim-surround'
+
 call plug#end()
 
 
@@ -101,6 +104,11 @@ source ~/.config/nvim/config/vimwiki.vim
 " let g:ov_disable_cse = 1
 
 " Make it so there is only autocomplete when i press the key
+" (Or on a really, really long word)
 let g:vsc_type_complete_length = 500
 
+" I don't even know anymore, conceallevel is hell with some of my plugins, but
+" it currently works so I'm not touching it
 set conceallevel=0
+
+
